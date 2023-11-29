@@ -1,3 +1,5 @@
+# Experimental, runnable MATLAB script which basically wastes CPU time
+
 Tested on MATLABR2023a
 
 How to run:
