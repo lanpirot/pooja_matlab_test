@@ -3,7 +3,7 @@ Tested on MATLABR2023a
 How to run:
 candidate_script(n) or candidate_script()
 
-If you don't give the parameter 'n', a preset 'n==1200' will be chosen.
+If you don't give the parameter 'n', a preset 'n==1200' will be chosen. If script takes too long, or too short, try lower, or higher values for 'n'.
 Wait a couple of seconds for output. On my machine with 'n==1200' the output is:
 
 
