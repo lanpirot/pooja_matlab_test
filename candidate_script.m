@@ -1,8 +1,17 @@
-function candidate_script(n)
+function candidate_script(n, mode)
     if ~exist("n",'var')
         n = 1200;
+        disp("No maximum n given, we choose " + string(n) + " ...")
     end
-    for i = 0:1
+    if ~exist("mode", 'var') || ~(mode == 0 || mode == 1)
+        minimum = 0;
+        maximum = 1;
+        disp("No mode (preallocation/no preallocation) specified, or not in [0,1], we perform for both modes ...")
+    else
+        minimum = mode;
+        maximum = mode;
+    end
+    for i = minimum:maximum
         method1(n, i);
         method2(n, i);
         method3(n, i);

@@ -3,9 +3,10 @@
 Tested on MATLABR2023a
 
 How to run:
-candidate_script(n) or candidate_script()
+candidate_script(n), candidate(n, i), or candidate_script()
 
 If you don't give the parameter 'n', a preset 'n==1200' will be chosen. If script takes too long, or too short, try lower, or higher values for 'n'.
+If no mode is given, the script will perform for both modes. mode == 0 --> with preallocation, mode == 1 --> without preallocation.
 Wait a couple of seconds for output. On my machine with 'n==1200' the output is:
 
 
